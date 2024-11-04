@@ -10,7 +10,9 @@ const navItems: NavItem[] = [
     { href: '/pages/login', text: 'Login' },
     { href: '/pages/firstFile', text: 'First file' },
     { href: '/pages/services', text: 'Services' },
-    { href: '/pages/contact', text: 'Contact' }
+    { href: '/pages/contact', text: 'Contact' },
+    { href: '/pages/cards', text: 'Cards' },
+    { href: '/pages/user', text: 'User' },
 ];
 
 const NavBar: React.FC = () => {

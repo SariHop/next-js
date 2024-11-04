@@ -1,12 +1,13 @@
 import Image from 'next/image'
 import React from 'react'
+import User from '../types/user'
 
-const Protofilio = () => {
+const Protofilio = (props:User) => {
     return (
-            <div className="w-60 bg-white shadow-lg rounded-lg overflow-hidden m-4">
+            <div className="w-60  bg-white shadow-lg rounded-lg overflow-hidden m-4 flex justify-between flex-col">
                 <div className="bg-black p-4 flex justify-center">
                     <Image
-                        src="/avatar.png"
+                        src={props.image}
                         width={120}
                         height={120}
                         alt="Picture of the author"
@@ -14,9 +15,9 @@ const Protofilio = () => {
                     />
                 </div>
                 <div className="text-center py-4 px-6">
-                    <h1 className="text-2xl font-bold text-gray-800">Jon Doeh</h1>
-                    <p className="text-sm text-gray-500 mt-2">CEO & Founder, Example</p>
-                    <p className="text-sm text-gray-500">Harvard University</p>
+                    <h1 className="text-2xl font-bold text-gray-800">{props.username}</h1> 
+                    <p className="text-sm text-gray-500 mt-2">{props.university}</p>
+                    {/* <p className="text-sm text-gray-500">Harvard University</p> */}
                 </div>
                 <div className="text-center pt-4">
                     <input
