@@ -1,13 +1,10 @@
 import React from 'react'
 import User from '@/app/types/user'
 import Protofilio from '@/app/components/Protofilio'
+import { getUsersById } from '@/app/services/users'
 
-const singleUser: User = {
-  id: -1,
-  username: "BIBI",
-  image: "/avatar.png",
-  university: "Harvard"
-}
+const singleUser: User = await getUsersById("1")
+  
 
 const page = () => {
   return (
