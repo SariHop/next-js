@@ -1,8 +1,9 @@
-import NavBar from '@/app/components/NavBar'
+import Protofilio from '@/app/components/Protofilio'
+
 export default function Home() {
   return (
-   <div className=' flex justify-center text-xl' >
-      Home Page
-   </div>
+    <div className="flex justify-center">
+      <Protofilio/>
+    </div>
   );
 }
