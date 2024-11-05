@@ -1,5 +1,3 @@
-"use client"
-
 import UserList from '@/app/components/UsersList'
 
 export default function Home() {
