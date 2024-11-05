@@ -7,7 +7,6 @@ const page = async() => {
   // const a =  await getUsers()
   const a =await getUsers()
   const arrayUsers:User[] = a.users
-  console.log(arrayUsers)
 
   return (
     <div className=' flex justify-center text-xl flex-wrap'>
