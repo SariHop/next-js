@@ -13,6 +13,7 @@ const navItems: NavItem[] = [
     { href: '/pages/contact', text: 'Contact' },
     { href: '/pages/cards', text: 'Cards' },
     { href: '/pages/user', text: 'User' },
+    { href: '/pages/reactQuery', text: 'reactQuery' },
 ];
 
 const NavBar: React.FC = () => {
